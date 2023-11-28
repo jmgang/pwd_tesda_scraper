@@ -1,0 +1,2 @@
+langchain==0.0.341
+pydantic==2.5.2
