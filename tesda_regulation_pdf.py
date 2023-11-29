@@ -9,11 +9,11 @@ class TesdaRegulationPDF(Serializable):
     documents: List[Document]
     toc_page: Optional[int]
     core_pages: List[int] = []
-    core_competency: str = ''
+    competency_map_pages: List[int] = []
 
     class Config:
         arbitrary_types_allowed = True
 
     def __repr__(self) -> str:
         return (f"TesdaRegulationPDF(Name:{self.name}, Length: {len(self.documents)} documents, TOC page: {self.toc_page}, "
-                f"Core pages: {self.core_pages}, Core Competency: '{self.core_competency}')")
+                f"Core pages: {self.core_pages}, Competency Map page: {self.competency_map_pages})")
