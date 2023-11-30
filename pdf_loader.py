@@ -484,8 +484,18 @@ if __name__ == "__main__":
 
     # Loading JSON files from datasets/tesda_regulations_json_trainee_requirements
     source_filepath = 'datasets/tesda_regulations_json_trainee_requirements'
-
     tesda_regulation_pdf_list = []
     for filename in os.listdir(source_filepath):
         tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
 
+    count = 1
+    for tesda_regulation_pdf in tesda_regulation_pdf_list:
+        print(count)
+        print(tesda_regulation_pdf.name)
+        table_of_contents_page = tesda_regulation_pdf.documents[tesda_regulation_pdf.toc_page].page_content
+        section1_number = retrieve_section1_page('Section 1', table_of_contents_page)
+        print(section1_number)
+        tesda_regulation_pdf.section1_pages = [int(page) for page in section1_number.split('-')]
+        save_as_json_tesda(tesda_regulation_pdf.name, tesda_regulation_pdf,
+                             path_prefix='datasets\\tesda_regulations_json_section1')
+        count += 1
