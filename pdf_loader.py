@@ -29,7 +29,8 @@ def tesda_regulation_to_dict(tesda_doc: TesdaRegulationPDF) -> dict:
         "toc_page": tesda_doc.toc_page,
         "core_pages": tesda_doc.core_pages,
         "competency_map_pages": tesda_doc.competency_map_pages,
-        "trainee_entry_requirements_pages": tesda_doc.trainee_entry_requirements_pages
+        "trainee_entry_requirements_pages": tesda_doc.trainee_entry_requirements_pages,
+        "section1_pages" : tesda_doc.section1_pages
     }
 
 
