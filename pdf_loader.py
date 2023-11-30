@@ -187,7 +187,6 @@ def retrieve_page_number(keyword: str, document: str) -> Any:
 
     return chain.run({'keyword': keyword, 'table_of_contents': document})
 
-
 def retrieve_trainee_requirements_number(keyword: str, document: str) -> Any:
     # Appropriately find the '{keyword}' and give me its starting and ending page numbers separated by a hyphen. (for example: 26-52).
     template = """Given the following unstructured Table of Contents from a PDF below, 
@@ -283,6 +282,94 @@ def retrieve_trainee_requirements_number(keyword: str, document: str) -> Any:
         111
 
         UNSTRUCTURED TABLE OF CONTENTS:
+        {table_of_contents}
+
+        YOUR RESPONSE:
+        """
+
+    llm = ChatOpenAI(
+        temperature=0,
+        openai_api_key=os.environ["OPENAI_API_KEY"],
+        model='gpt-3.5-turbo-1106'
+    )
+
+    prompt = PromptTemplate(
+        input_variables=['keyword', 'table_of_contents'], template=template
+    )
+
+    chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
+
+    return chain.run({'keyword': keyword, 'table_of_contents': document})
+
+
+def retrieve_section1_page(keyword: str, document: str) -> Any:
+    # Appropriately find the '{keyword}' and give me its starting and ending page numbers separated by a hyphen. (for example: 26-52).
+    template = """Given the following unstructured Table of Contents from a PDF below, 
+        Find the page numbers for '{keyword}'. 
+        If you see that the page numbers of '{keyword}' has a hypen, return those page numbers. 
+        If you see only one, return that page number. It can only be one or the other. 
+        The page number or page numbers is/are usually page 1 or page 1-2. 
+        Your response should only be the format mentioned above. Do not add any more details. See examples below.
+
+        EXAMPLE 1:
+        Agricultural Crops Production NC I  TABLE OF CONTENTS  
+        AGRICULTURE AND FISHERY, PROCESSED FOOD AND BEVERAGES SECTOR  
+ 
+        AGRICULTURAL CROPS PRODUCTION NC I  
+         
+         Page No.  
+         
+        PREFACE   
+        FOREWORD   
+          
+        SECTION 1   AGRICULTURAL CROPS PRODUCTION  NC I 
+        QUALIFICATION  01  
+
+
+        SAMPLE RESPONSE 1:
+        1
+
+        EXAMPLE 2:
+        TR - Agroentrepreneurship NCI V  Promulgated February 3, 2017  
+         1  TABLE OF CONTENTS  
+         
+         
+        AGRICULTURE, FORESTRY AND FISHERY  SECTOR  
+         
+        AGROENTREPRENEURSHIP  NCIV  
+         
+          Page/s  
+         
+        Section 1  AGROENTREPRENEURSHIP  NCIV  QUALIFICATION  
+         2  
+         
+        Section 2   
+
+        SAMPLE RESPONSE 2:
+        2
+        
+        EXAMPLE 3:
+        TABLE OF CONTENTS  
+        
+        TOURISM SECTOR  
+        (HOTELS AND RESTAURANTS)  
+         
+        HOUSEKEEPING NC III  
+         
+         
+           Page No.  
+         
+        SECTION 1    HOUSEKEEPING NC III  
+           QUALIFICATION    1 -   2   
+          
+        SECTION 2       COMPETENCY STANDARDS                                                        
+         
+          B asic Competencies
+        
+        SAMPLE RESPONSE 3:
+        1-2
+        
+        ACTUAL UNSTRUCTURED TABLE OF CONTENTS:
         {table_of_contents}
 
         YOUR RESPONSE:
