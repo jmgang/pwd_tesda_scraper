@@ -8,8 +8,10 @@ from langchain.document_loaders import PyPDFLoader
 from langchain.prompts.prompt import PromptTemplate
 from langchain.docstore.document import Document
 from tesda_regulation_pdf import TesdaRegulationPDF
+from dotenv import load_dotenv
 
-os.environ["OPENAI_API_KEY"] = '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'
+
+load_dotenv()  # take environment variables from .env.
 
 
 def document_to_dict(doc: Document) -> dict:
@@ -26,7 +28,8 @@ def tesda_regulation_to_dict(tesda_doc: TesdaRegulationPDF) -> dict:
         "documents": [document_to_dict(doc) for doc in tesda_doc.documents],
         "toc_page": tesda_doc.toc_page,
         "core_pages": tesda_doc.core_pages,
-        "competency_map_pages": tesda_doc.competency_map_pages
+        "competency_map_pages": tesda_doc.competency_map_pages,
+        "trainee_entry_requirements_pages": tesda_doc.trainee_entry_requirements_pages
     }
 
 
@@ -245,6 +248,39 @@ def retrieve_trainee_requirements_number(keyword: str, document: str) -> Any:
 
         SAMPLE RESPONSE 2:
         83
+        
+        EXAMPLE 3:
+        TRAINING ARRANG E MENTS  
+        3.1.  Curriculum Design  
+        3.1.1.  Basic  
+        3.1.2.  Common  
+        3.1.3.  Core  
+        3.2.  Training Delivery  
+        3.3.  Trainee Entry Requirements  
+        3.4.  List of Tools, Equipment and Materials  
+        3.5.  Training Facilities  
+        3.6.  Trainers’ Qualifications  
+        3.7.  Institutional Assessment  
+          
+        71  -  113  
+        71  
+        72  
+        79  
+        89  
+        109  
+        111  
+        111  
+        112  
+        113  
+        113  
+        
+        EXPLANATION 3:
+        In this case, the overall page numbers for the Section is also included. This runs from 71 to 113. Therefore, 
+        the Trainee Entry Requirements is on the 7th one on this case instead of the 6th, thus the correct page number
+        is page 111. It's beneficial to count the length of the subsections vs the page numbers to see any mismatch.
+        
+        SAMPLE RESPONSE 3:
+        111
 
         UNSTRUCTURED TABLE OF CONTENTS:
         {table_of_contents}
@@ -335,18 +371,33 @@ if __name__ == "__main__":
     #     count += 1
 
     # Loading json files from tesda_regulations_json_competency_map directory
-    source_filepath = 'datasets/tesda_regulations_json_competency_map'
-
-    tesda_regulation_pdf_list = []
-    for filename in os.listdir(source_filepath):
-        tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
+    # source_filepath = 'datasets/tesda_regulations_json_competency_map'
+    #
+    # tesda_regulation_pdf_list = []
+    # for filename in os.listdir(source_filepath):
+    #     tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
 
     # Finding the trainee requirements page numbers by first
     # extracting text between section 3 and 4 of table of contents pages
     # then use the LLM to find the right page number
-    count = 1
-    for tesda_regulation_pdf in tesda_regulation_pdf_list:
-        print(count)
+    # count = 1
+    # for tesda_regulation_pdf in tesda_regulation_pdf_list[60:]:
+    #     print(count)
+    #     print(tesda_regulation_pdf.name)
+    #     table_of_contents_page = tesda_regulation_pdf.documents[tesda_regulation_pdf.toc_page].page_content
+    #     trainee_requirements_number = retrieve_trainee_requirements_number(
+    #         '3.3 Trainee Entry Requirements', table_of_contents_page
+    #     )
+    #     print(trainee_requirements_number)
+    #     tesda_regulation_pdf.trainee_entry_requirements_pages = [int(page) for page in trainee_requirements_number.split('-')]
+    #     save_as_json_tesda(tesda_regulation_pdf.name, tesda_regulation_pdf,
+    #                      path_prefix='datasets\\tesda_regulations_json_trainee_requirements')
+    #     count += 1
 
-        count += 1
+    # Loading JSON files from datasets/tesda_regulations_json_trainee_requirements
+    source_filepath = 'datasets/tesda_regulations_json_trainee_requirements'
+
+    tesda_regulation_pdf_list = []
+    for filename in os.listdir(source_filepath):
+        tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
 
