@@ -9,6 +9,7 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain.docstore.document import Document
 from tesda_regulation_pdf import TesdaRegulationPDF
 from dotenv import load_dotenv
+import pandas as pd
 
 
 load_dotenv()  # take environment variables from .env.
@@ -414,6 +415,15 @@ def find_core_competencies_page_numbers(text):
     else:
         return None
 
+def extract_documents(documents: List[Document], pages: List[int], toc_page:int) -> str:
+    extracted_documents_list = []
+    starting_page_number = pages[0] + toc_page
+    ending_page_number = pages[1] + toc_page if len(pages) == 2 else starting_page_number
+    while starting_page_number <= ending_page_number:
+        extracted_documents_list.append(documents[starting_page_number].page_content)
+        starting_page_number += 1
+    return '\n'.join(extracted_documents_list)
+
 
 if __name__ == "__main__":
     # Loading the PDFs using PDFLoader then saving as a JSON file.
@@ -483,19 +493,51 @@ if __name__ == "__main__":
     #     count += 1
 
     # Loading JSON files from datasets/tesda_regulations_json_trainee_requirements
-    source_filepath = 'datasets/tesda_regulations_json_trainee_requirements'
+    # source_filepath = 'datasets/tesda_regulations_json_trainee_requirements'
+    # tesda_regulation_pdf_list = []
+    # for filename in os.listdir(source_filepath):
+    #     tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
+    #
+    # count = 1
+    # for tesda_regulation_pdf in tesda_regulation_pdf_list:
+    #     print(count)
+    #     print(tesda_regulation_pdf.name)
+    #     table_of_contents_page = tesda_regulation_pdf.documents[tesda_regulation_pdf.toc_page].page_content
+    #     section1_number = retrieve_section1_page('Section 1', table_of_contents_page)
+    #     print(section1_number)
+    #     tesda_regulation_pdf.section1_pages = [int(page) for page in section1_number.split('-')]
+    #     save_as_json_tesda(tesda_regulation_pdf.name, tesda_regulation_pdf,
+    #                          path_prefix='datasets\\tesda_regulations_json_section1')
+    #     count += 1
+
+    # Building the dataset using pandas
+    # Loading the JSON files
+    source_filepath = 'datasets/tesda_regulations_json_section1_updated'
     tesda_regulation_pdf_list = []
     for filename in os.listdir(source_filepath):
         tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
 
-    count = 1
+    tesda_dataset_list = list()
     for tesda_regulation_pdf in tesda_regulation_pdf_list:
-        print(count)
-        print(tesda_regulation_pdf.name)
-        table_of_contents_page = tesda_regulation_pdf.documents[tesda_regulation_pdf.toc_page].page_content
-        section1_number = retrieve_section1_page('Section 1', table_of_contents_page)
-        print(section1_number)
-        tesda_regulation_pdf.section1_pages = [int(page) for page in section1_number.split('-')]
-        save_as_json_tesda(tesda_regulation_pdf.name, tesda_regulation_pdf,
-                             path_prefix='datasets\\tesda_regulations_json_section1')
-        count += 1
+        tesda_dataset_list.append({
+            'name': tesda_regulation_pdf.name,
+            'core_competencies': extract_documents(tesda_regulation_pdf.documents,
+                                                   tesda_regulation_pdf.core_pages,
+                                                   tesda_regulation_pdf.toc_page),
+            'trainee_entry_requirements': extract_documents(tesda_regulation_pdf.documents,
+                                                            tesda_regulation_pdf.trainee_entry_requirements_pages,
+                                                            tesda_regulation_pdf.toc_page),
+            'section_1': extract_documents(tesda_regulation_pdf.documents,
+                                           tesda_regulation_pdf.section1_pages,
+                                           tesda_regulation_pdf.toc_page)
+        })
+
+    print(tesda_dataset_list[:5])
+
+    tesda_df = pd.DataFrame(tesda_dataset_list)
+    print(tesda_df.head())
+
+    print(tesda_df.loc[0, 'trainee_entry_requirements'])
+
+    tesda_df.to_csv('datasets/tesda_modules_dataset_v1.csv', index=False)
+
