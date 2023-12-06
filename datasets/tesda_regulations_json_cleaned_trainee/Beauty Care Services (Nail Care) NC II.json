@@ -1,0 +1,11 @@
+{
+    "name": "Beauty Care Services (Nail Care) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "MUST be able to communicate effectively both orally and in written form\nMUST be physically, emotionally, psychologically and mentally fit\nMUST be able to perform basic mathematical computation (Fundamental Operation)\nMUST secure a medical certificate for fitness to handle chemicals",
+        "metadata": {
+            "source": "datasets\\raw\\Beauty Care Services (Nail Care) NC II.pdf",
+            "page": 49
+        },
+        "type": "Document"
+    }
+}

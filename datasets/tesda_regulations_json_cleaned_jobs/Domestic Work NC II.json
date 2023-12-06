@@ -1,0 +1,11 @@
+{
+    "name": "Domestic Work NC II",
+    "section1_jobs": {
+        "page_content": "Domestic Worker, Houseboy, Housemaid, Housekeeper, Hand-launderer, Helper Kitchen, Cleaner Hotel",
+        "metadata": {
+            "source": "datasets\\raw\\Domestic Work NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

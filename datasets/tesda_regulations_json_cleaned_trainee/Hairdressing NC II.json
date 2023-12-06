@@ -1,0 +1,11 @@
+{
+    "name": "Hairdressing NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Must be able to communicate effectively both orally and in written form. Must be physically, emotionally and mentally fit. Must be able to perform basic mathematical computations (Fundamental Operations). Must secure a medical certificate for fitness to handle chemicals. Note to students: Because many chemical sprays and airborne pollutants are found in this qualification, students are advised to consult their physicians as to possible problems (i.e., allergies, asthma, dermatitis, etc.) before enrolling.",
+        "metadata": {
+            "source": "datasets\\raw\\Hairdressing NC II.pdf",
+            "page": 62
+        },
+        "type": "Document"
+    }
+}

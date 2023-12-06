@@ -1,0 +1,11 @@
+{
+    "name": "Driving NC II",
+    "trainee_entry_requirements": {
+        "page_content": "With good moral character; Able to communicate both orally and in writing; Physically fit and mentally healthy as certified by a Public Health Officer",
+        "metadata": {
+            "source": "datasets\\raw\\Driving NC II.pdf",
+            "page": 54
+        },
+        "type": "Document"
+    }
+}

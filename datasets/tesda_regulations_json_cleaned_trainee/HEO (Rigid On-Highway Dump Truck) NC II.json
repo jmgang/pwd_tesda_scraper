@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Rigid On-Highway Dump Truck) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "At least Junior High School Level Completer or an Alternative Learning System (ALS) Certificate of Completion with grade 10 equivalent holder\nMust possess good communication skills\nCan perform basic mathematical computation\nDriver’s License (Restriction 2 or 3)\nPhysically fit",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Rigid On-Highway Dump Truck) NC II.pdf",
+            "page": 94
+        },
+        "type": "Document"
+    }
+}

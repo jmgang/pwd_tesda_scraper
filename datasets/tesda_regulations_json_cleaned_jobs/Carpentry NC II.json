@@ -1,0 +1,11 @@
+{
+    "name": "Carpentry NC II",
+    "section1_jobs": {
+        "page_content": "Rough Carpenter",
+        "metadata": {
+            "source": "datasets\\raw\\Carpentry NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

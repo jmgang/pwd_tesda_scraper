@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Rough Terrain Crane) NC II",
+    "section1_jobs": {
+        "page_content": "Rough-terrain crane operator",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Rough Terrain Crane) NC II.pdf",
+            "page": 4
+        },
+        "type": "Document"
+    }
+}

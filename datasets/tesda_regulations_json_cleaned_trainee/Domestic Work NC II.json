@@ -1,0 +1,11 @@
+{
+    "name": "Domestic Work NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Must have completed basic education or Holder of Alternative Learning Systems (ALS) certificate of completion with grade 10 equivalent; Must have good communication skills; Must be able to navigate through any online training platforms using electronic devices.",
+        "metadata": {
+            "source": "datasets\\raw\\Domestic Work NC II.pdf",
+            "page": 184
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Tile Setting NC II",
+    "section1_jobs": {
+        "page_content": "Tile-Setter",
+        "metadata": {
+            "source": "datasets\\raw\\Tile Setting NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Technical Drafting NC II",
+    "section1_jobs": {
+        "page_content": "Draftsman, CAD operator",
+        "metadata": {
+            "source": "datasets\\raw\\Technical Drafting NC II.pdf",
+            "page": 4
+        },
+        "type": "Document"
+    }
+}

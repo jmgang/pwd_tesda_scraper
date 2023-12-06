@@ -1,0 +1,11 @@
+{
+    "name": "MotorcycleSmall Engine Servicing NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Can communicate both oral and written; Can perform basic mathematical computation. At least Senior High School (Grade 11) level; At least holder of Student Permit or LTO license (Restriction Code 1)",
+        "metadata": {
+            "source": "datasets\\raw\\MotorcycleSmall Engine Servicing NC II.pdf",
+            "page": 145
+        },
+        "type": "Document"
+    }
+}

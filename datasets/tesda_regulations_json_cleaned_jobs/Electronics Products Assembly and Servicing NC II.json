@@ -1,0 +1,11 @@
+{
+    "name": "Electronics Products Assembly and Servicing NC II",
+    "section1_jobs": {
+        "page_content": "Electronic Product Assembler, Domestic Appliance Service Technician, Audio-Video Service Technician, Industrial Electronic Technician, Electronic Production Line Assembler, Factory Production Worker",
+        "metadata": {
+            "source": "datasets\\raw\\Electronics Products Assembly and Servicing NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

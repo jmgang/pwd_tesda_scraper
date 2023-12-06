@@ -1,0 +1,11 @@
+{
+    "name": "Driving (Articulated Vehicle) NC III",
+    "trainee_entry_requirements": {
+        "page_content": "With good moral character; Able to communicate both orally and in writing. Physically fit and mentally healthy as certified by a Public Health Officer. Holder of LTO license with restriction code 3.",
+        "metadata": {
+            "source": "datasets\\raw\\Driving (Articulated Vehicle) NC III.pdf",
+            "page": 64
+        },
+        "type": "Document"
+    }
+}

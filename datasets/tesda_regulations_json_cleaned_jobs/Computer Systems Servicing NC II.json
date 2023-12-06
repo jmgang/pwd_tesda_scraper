@@ -1,0 +1,11 @@
+{
+    "name": "Computer Systems Servicing NC II",
+    "section1_jobs": {
+        "page_content": "Computer Assembler, Computer Service Technician, Network Technician, Computer Maintenance Technician",
+        "metadata": {
+            "source": "datasets\\raw\\Computer Systems Servicing NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

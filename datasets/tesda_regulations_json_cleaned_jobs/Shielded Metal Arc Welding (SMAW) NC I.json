@@ -1,0 +1,11 @@
+{
+    "name": "Shielded Metal Arc Welding (SMAW) NC I",
+    "section1_jobs": {
+        "page_content": "Plate Welder (SMAW)",
+        "metadata": {
+            "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC I.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

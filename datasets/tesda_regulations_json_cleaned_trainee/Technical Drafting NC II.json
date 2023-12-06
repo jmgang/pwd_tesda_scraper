@@ -1,0 +1,11 @@
+{
+    "name": "Technical Drafting NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Good moral character\nAbility to communicate\nPhysically fit and mentally healthy\nCan perform basic mathematical computation and mensuration",
+        "metadata": {
+            "source": "datasets\\raw\\Technical Drafting NC II.pdf",
+            "page": 63
+        },
+        "type": "Document"
+    }
+}

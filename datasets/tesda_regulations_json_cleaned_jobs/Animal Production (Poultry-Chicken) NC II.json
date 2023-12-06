@@ -1,0 +1,11 @@
+{
+    "name": "Animal Production (Poultry-Chicken) NC II",
+    "section1_jobs": {
+        "page_content": "Poultry farmer, Broiler raiser, Poultry farm worker, Layer raiser, Poultry farm assistant, Poultry breeder, Poultry farm caretaker, Flock man, Poultry service crew",
+        "metadata": {
+            "source": "datasets\\raw\\Animal Production (Poultry-Chicken) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

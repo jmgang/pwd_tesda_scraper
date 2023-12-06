@@ -1,0 +1,11 @@
+{
+    "name": "RAC Servicing (DomRAC) NC II",
+    "section1_jobs": {
+        "page_content": "Domestic Refrigeration and Air-conditioning Technician",
+        "metadata": {
+            "source": "datasets\\raw\\RAC Servicing (DomRAC) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

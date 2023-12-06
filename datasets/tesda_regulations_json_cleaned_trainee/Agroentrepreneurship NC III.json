@@ -1,0 +1,11 @@
+{
+    "name": "Agroentrepreneurship NC III",
+    "trainee_entry_requirements": {
+        "page_content": "Can communicate both orally and in writing; Can perform mensuration and calculation; and any of the three: Holder of AE NC II, or Holder of NC on Crop Production, Animal Production, Aquaculture, and Food Processing; With two (2) year experience for the last five (5) years in any of the above-mentioned areas (Agroenterprise, Crop Production, Animal Production, Aquaculture, and Food Processing); Graduate of Agriculture-related courses in any of the above-mentioned areas (Agroenterprise, Crop Production, Animal Production, Aquaculture, and Food Processing)",
+        "metadata": {
+            "source": "datasets\\raw\\Agroentrepreneurship NC III.pdf",
+            "page": 112
+        },
+        "type": "Document"
+    }
+}

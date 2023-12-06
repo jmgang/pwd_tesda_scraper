@@ -1,0 +1,11 @@
+{
+    "name": "Carpentry NC II",
+    "trainee_entry_requirements": {
+        "page_content": "A holder of National Certificate Level I\nGood Moral Character\nAbility to communicate\nPhysically fit and mentally healthy\nCan perform basic mathematical computation and mensuration.",
+        "metadata": {
+            "source": "datasets\\raw\\Carpentry NC II.pdf",
+            "page": 68
+        },
+        "type": "Document"
+    }
+}

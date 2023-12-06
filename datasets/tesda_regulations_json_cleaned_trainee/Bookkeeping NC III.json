@@ -1,0 +1,11 @@
+{
+    "name": "Bookkeeping NC III",
+    "trainee_entry_requirements": {
+        "page_content": "Must be able to communicate effectively both orally and in written form. Must be physically, emotionally, psychologically and mentally fit. Must be able to perform basic mathematical computations.",
+        "metadata": {
+            "source": "datasets\\raw\\Bookkeeping NC III.pdf",
+            "page": 59
+        },
+        "type": "Document"
+    }
+}

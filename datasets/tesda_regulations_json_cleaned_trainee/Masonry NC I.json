@@ -1,0 +1,11 @@
+{
+    "name": "Masonry NC I",
+    "trainee_entry_requirements": {
+        "page_content": "Trainees or students who wish to enter this training should possess the following requirements: Can communicate both orally and in writing. Can perform basic arithmetic operations. Physically fit.",
+        "metadata": {
+            "source": "datasets\\raw\\Masonry NC I.pdf",
+            "page": 103
+        },
+        "type": "Document"
+    }
+}

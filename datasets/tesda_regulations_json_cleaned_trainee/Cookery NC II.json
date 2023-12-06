@@ -1,0 +1,11 @@
+{
+    "name": "Cookery NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Trainees or students wishing to gain entry into this course should possess the following requirements: can communicate both in oral and written; physically and mentally fit; with good moral character; and can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Cookery NC II.pdf",
+            "page": 85
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Agricultural Crops Production NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Able to read and write; With good moral character; Able to communicate, both orally and in writing; and Physically fit and mentally healthy as certified by a Public Health Officer",
+        "metadata": {
+            "source": "datasets\\raw\\Agricultural Crops Production NC II.pdf",
+            "page": 58
+        },
+        "type": "Document"
+    }
+}

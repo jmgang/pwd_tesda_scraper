@@ -1,0 +1,11 @@
+{
+    "name": "Food Processing NC II",
+    "section1_jobs": {
+        "page_content": "Production Aide, Packaging Aide",
+        "metadata": {
+            "source": "datasets\\raw\\Food Processing NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

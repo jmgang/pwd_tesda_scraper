@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Backhoe Loader) NC II",
+    "section1_jobs": {
+        "page_content": "Backhoe loader operator",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Backhoe Loader) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

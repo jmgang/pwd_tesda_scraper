@@ -1,0 +1,11 @@
+{
+    "name": "Agricultural Crops Production NC II",
+    "section1_jobs": {
+        "page_content": "Farmer/Grower, Farm worker, Nursery operator, Farm aide, Farm caretaker",
+        "metadata": {
+            "source": "datasets\\raw\\Agricultural Crops Production NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

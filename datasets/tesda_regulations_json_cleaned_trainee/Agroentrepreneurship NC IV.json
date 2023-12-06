@@ -1,0 +1,11 @@
+{
+    "name": "Agroentrepreneurship NC IV",
+    "trainee_entry_requirements": {
+        "page_content": "At least senior high school level or holder of AE NC III. Can communicate both orally and in writing. Can perform mensuration and calculation.",
+        "metadata": {
+            "source": "datasets\\raw\\Agroentrepreneurship NC IV.pdf",
+            "page": 133
+        },
+        "type": "Document"
+    }
+}

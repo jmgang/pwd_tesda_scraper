@@ -1,0 +1,11 @@
+{
+    "name": "Tailoring NC II",
+    "section1_jobs": {
+        "page_content": "Tailor, Garment Sewer",
+        "metadata": {
+            "source": "datasets\\raw\\Tailoring NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Rigid On-Highway Dump Truck) NC II",
+    "section1_jobs": {
+        "page_content": "Rigid on-highway dump truck operator",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Rigid On-Highway Dump Truck) NC II.pdf",
+            "page": 6
+        },
+        "type": "Document"
+    }
+}

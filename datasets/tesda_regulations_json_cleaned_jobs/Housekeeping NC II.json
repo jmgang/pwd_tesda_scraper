@@ -1,0 +1,11 @@
+{
+    "name": "Housekeeping NC II",
+    "section1_jobs": {
+        "page_content": "Junior Cleaner, Assistant Cleaner, Assistant Public Area Cleaner, Cleaner, Public Area Cleaner, Attendant, Room/Cabin Attendant/Room Maid, Laundry Attendant, Housekeeping Attendant, Butler",
+        "metadata": {
+            "source": "datasets\\raw\\Housekeeping NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

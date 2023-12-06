@@ -1,0 +1,11 @@
+{
+    "name": "Housekeeping NC III",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate in basic English in both oral and written form, physically and mentally fit, with good moral character, can perform basic mathematical computation, must have completed training in Housekeeping NCII or equivalent; or have had at least six months’ experience as room attendant",
+        "metadata": {
+            "source": "datasets\\raw\\Housekeeping NC III.pdf",
+            "page": 73
+        },
+        "type": "Document"
+    }
+}

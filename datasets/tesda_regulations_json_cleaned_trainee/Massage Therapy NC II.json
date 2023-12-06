@@ -1,0 +1,11 @@
+{
+    "name": "Massage Therapy NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Must have finished 10 years of basic education or Alternative Learning System (ALS) equivalent. Must be able to communicate both orally and in writing. Can perform basic mathematical computations.",
+        "metadata": {
+            "source": "datasets\\raw\\Massage Therapy NC II.pdf",
+            "page": 151
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Masonry NC II",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate either orally and written\nphysically and mentally fit\nwith good moral character\ncan perform basic mathematical computation and mensuration",
+        "metadata": {
+            "source": "datasets\\raw\\Masonry NC II.pdf",
+            "page": 59
+        },
+        "type": "Document"
+    }
+}

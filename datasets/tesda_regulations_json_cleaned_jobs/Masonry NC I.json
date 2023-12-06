@@ -1,0 +1,11 @@
+{
+    "name": "Masonry NC I",
+    "section1_jobs": {
+        "page_content": "Helper Mason, Construction Helper",
+        "metadata": {
+            "source": "datasets\\raw\\Masonry NC I.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

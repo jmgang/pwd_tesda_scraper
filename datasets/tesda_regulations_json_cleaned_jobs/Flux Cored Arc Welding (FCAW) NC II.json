@@ -1,0 +1,11 @@
+{
+    "name": "Flux Cored Arc Welding (FCAW) NC II",
+    "section1_jobs": {
+        "page_content": "Plate Welder (FCAW), Pipe Welder (FCAW)",
+        "metadata": {
+            "source": "datasets\\raw\\Flux Cored Arc Welding (FCAW) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

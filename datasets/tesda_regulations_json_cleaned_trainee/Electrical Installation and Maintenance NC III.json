@@ -1,0 +1,11 @@
+{
+    "name": "Electrical Installation and Maintenance NC III",
+    "trainee_entry_requirements": {
+        "page_content": "The trainees who wish to enter the course should possess the following requirements: Must be a holder and/or have undergone training in Electrical Installation and Maintenance NC II or Mechatronics Servicing NC II This list does not include specific institutional requirements such as educational attainment, appropriate work experience, and others that may be required of the trainees by the school or training center delivering the TVET program.",
+        "metadata": {
+            "source": "datasets\\raw\\Electrical Installation and Maintenance NC III.pdf",
+            "page": 81
+        },
+        "type": "Document"
+    }
+}

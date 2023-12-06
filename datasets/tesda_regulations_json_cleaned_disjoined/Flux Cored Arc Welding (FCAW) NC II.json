@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Flux Cored Arc Welding (FCAW) NC II",
+        "core_competencies": [
+            {
+                "page_content": "FCAW NC II 43 CORE COMPETENCY UNIT OF COMPETENCY: Weld carbon steel pipes using FCAW UNIT CODE: MEE721310 DESCRIPTOR: This unit covers the skills, knowledge and attitudes required in welding carbon steel pipes using FCAW process. ELEMENTS PERFORMANCE CRITERIA Italicized terms are elaborated in the Range of Variables 1. Perform root pass (backing material) 1.1 Root pass is performed in accordance with WPS and/or client specifications. 1.2 Weld is visually checked for defects and repaired, as required (root pass is performed without defects 1.3 Weld is visually acceptable in accordance with applicable codes and standards 2. Clean root pass 2.1 Root pass is cleaned and is free from defects and discontinuities (root pass is cleaned without defects and discontinuities 2.2 Task is performed in accordance with approved WPS 3. Weld subsequent/filling passes 3.1 Subsequent/filling passes are performed in accordance with approved WPS 3.2 Weld is visually checked for defects and repaired, as required 3.3 Weld is visually acceptable in accordance with applicable codes and standards 4. Perform capping 4.1 Capping is performed in accordance with WPS and/or client specifications 4.2 Weld is visually checked for defects and repaired, as required 4.3 Weld is visually acceptable in accordance with applicable codes and standards",
+                "metadata": {
+                    "source": "datasets\\raw\\Flux Cored Arc Welding (FCAW) NC II.pdf",
+                    "page": 44
+                },
+                "type": "Document"
+            },
+            {
+                "page_content": "FCAW NCI 44 RANGE OF VARIABLE VARIABLE RANGE 1. WPS WPS Requirements 1.1 Welding positions 1.1.1 2G and 5G and/or 6G 1.2 Wall thickness 1.2.1 1.6mm and above 1.3 Type of material 1.3.1 Carbon and mild steel pipes 1.3.2 Diameter 25.4mm (1 inch) and above 1.4 Type and size of flux cored electrode 1.5 Travel speed 1.6 Current setting (polarity, amperage, voltage) 1.7 Backing materials (weld metal, backing ring or ceramics) 1.8 Welding accessories 1.8.1 Transformer Rectifier Type 1.8.2 Wire feeder 1.9 Joint preparation 2. Defects 2.1 Porosity 2.2 Undercut 2.3 Arc Strike 2.4 Spatters 2.5 Wire, solid and slag inclusion 2.6 Concavity/convexity 2.7 Degree of reinforcement 2.8 Burn Through 2.9 Crater cracks 2.10 Cracks 2.11 Lack of Fusion (tie-in) 2.12 Pinholes/Blowholes 2.13 Under Fill 2.14 Overlap 2.15 Misalignment 2.16 Distortion",
+                "metadata": {
+                    "source": "datasets\\raw\\Flux Cored Arc Welding (FCAW) NC II.pdf",
+                    "page": 45
+                },
+                "type": "Document"
+            },
+            {
+                "page_content": "FCAW NC II 45 EVIDENCE GUIDE 1 Critical Aspects of Competency Assessment requires evidence that the candidate welded carbon steel pipes using FCAW in 2G, 5G and/or 6G positions to acceptable standard following the approved WPS. 2 Underpinning Knowledge 2.1 Drawing/Plan/WPS interpretation 2.2 Materials and consumables 2.2.1 Flux cored electrode (self-shielded and gas shielded) 2.2.2 Shielding gases 2.3 Welding Equipment and Tools 2.4 Basic Mathematics (MDAS) 2.5 Welding Codes and symbols 2.6 Identification of weld defects 3 Underpinning Skills 3.1 Measuring skills 3.2 Communication skills 3.3 Rectifying weld defects 3.4 Applying welding techniques for FCAW 3.5 Handling welding tools and equipment 3.6 Handling materials and consumables and checking purity of shielding gas 3.7 Philippine OH&S Rules and/or client’s safety procedure 4 Resource Implications The following resources must be provided: 4.1 Well-ventilated work area/shop with FCAW facilities and equipment 4.2 Supplies and materials 4.3 PPE 4.4 Fumes extractor, if applicable 4.4 Relevant documentation such as WPS and working drawing 4.5 Stand-by fire fighting equipment 5 Method of Assessment Competency must be assessed through: 5.1 Demonstration/observation and oral questioning 5.2 Written test 5.3 Portfolio (awards, records, certificates, endorsements, etc.) 6 Context of Assessment Assessment may be conducted in the workplace or in a simulated work environment.",
+                "metadata": {
+                    "source": "datasets\\raw\\Flux Cored Arc Welding (FCAW) NC II.pdf",
+                    "page": 46
+                },
+                "type": "Document"
+            }
+        ]
+    }
+]

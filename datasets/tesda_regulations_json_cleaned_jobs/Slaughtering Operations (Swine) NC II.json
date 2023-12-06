@@ -1,0 +1,11 @@
+{
+    "name": "Slaughtering Operations (Swine) NC II",
+    "section1_jobs": {
+        "page_content": "Slaughterhouse Butcher (Swine)",
+        "metadata": {
+            "source": "datasets\\raw\\Slaughtering Operations (Swine) NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

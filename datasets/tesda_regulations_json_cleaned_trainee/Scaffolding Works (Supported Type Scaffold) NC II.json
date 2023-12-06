@@ -1,0 +1,11 @@
+{
+    "name": "Scaffolding Works (Supported Type Scaffold) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Trainees or students who wish to enter this training should possess the following requirements: Can communicate both orally and in writing. Physically fit. Can perform basic mathematical computation and mensuration.",
+        "metadata": {
+            "source": "datasets\\raw\\Scaffolding Works (Supported Type Scaffold) NC II.pdf",
+            "page": 88
+        },
+        "type": "Document"
+    }
+}

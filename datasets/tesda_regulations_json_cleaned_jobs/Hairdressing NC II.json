@@ -1,0 +1,11 @@
+{
+    "name": "Hairdressing NC II",
+    "section1_jobs": {
+        "page_content": "Junior Assistant, Colorist, Permist, Make-up Artist, Haircutter, Hairstylist",
+        "metadata": {
+            "source": "datasets\\raw\\Hairdressing NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

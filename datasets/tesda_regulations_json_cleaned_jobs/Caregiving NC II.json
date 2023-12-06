@@ -1,0 +1,11 @@
+{
+    "name": "Caregiving NC II",
+    "section1_jobs": {
+        "page_content": "Caregiver of an infant/toddler, Caregiver of a child, Caregiver of an elderly, Caregiver of people with special needs",
+        "metadata": {
+            "source": "datasets\\raw\\Caregiving NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

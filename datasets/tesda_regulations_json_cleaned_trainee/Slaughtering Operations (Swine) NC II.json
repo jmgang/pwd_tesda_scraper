@@ -1,0 +1,11 @@
+{
+    "name": "Slaughtering Operations (Swine) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Must have completed 10 years basic education\nCan communicate both orally and in writing",
+        "metadata": {
+            "source": "datasets\\raw\\Slaughtering Operations (Swine) NC II.pdf",
+            "page": 90
+        },
+        "type": "Document"
+    }
+}

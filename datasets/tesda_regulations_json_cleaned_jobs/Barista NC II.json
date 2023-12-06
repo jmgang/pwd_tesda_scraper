@@ -1,0 +1,11 @@
+{
+    "name": "Barista NC II",
+    "section1_jobs": {
+        "page_content": "Barista, Prepare espresso, Texture milk, Prepare and serve coffee beverages, Perform basic maintenance of machine and equipment, Perform basic cashiering and general control procedures",
+        "metadata": {
+            "source": "datasets\\raw\\Barista NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

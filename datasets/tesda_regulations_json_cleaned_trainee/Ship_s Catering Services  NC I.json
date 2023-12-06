@@ -1,0 +1,11 @@
+{
+    "name": "Ship_s Catering Services  NC I",
+    "trainee_entry_requirements": {
+        "page_content": "Must be High School graduate\n18 years old and above\nMust have a good moral character\nMust be physically and mentally fit as per MLC 2006 Regulation 1.2 - Medical Certificate\nCan communicate in English both oral and written",
+        "metadata": {
+            "source": "datasets\\raw\\Ship_s Catering Services  NC I.pdf",
+            "page": 45
+        },
+        "type": "Document"
+    }
+}

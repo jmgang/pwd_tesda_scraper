@@ -1,0 +1,11 @@
+{
+    "name": "Beauty Care Services (Nail Care) NC II",
+    "section1_jobs": {
+        "page_content": "Manicurist / Pedicurist, Nail Technician",
+        "metadata": {
+            "source": "datasets\\raw\\Beauty Care Services (Nail Care) NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Hydraulic Excavator) NC II",
+    "section1_jobs": {
+        "page_content": "Hydraulic excavator operator",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Hydraulic Excavator) NC II.pdf",
+            "page": 6
+        },
+        "type": "Document"
+    }
+}

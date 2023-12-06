@@ -1,0 +1,11 @@
+{
+    "name": "Bread and Pastry Production NC II",
+    "section1_jobs": {
+        "page_content": "Commis - Pastry, Baker",
+        "metadata": {
+            "source": "datasets\\raw\\Bread and Pastry Production NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

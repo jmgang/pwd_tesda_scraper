@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Truck Mounted Crane) NC II",
+    "section1_jobs": {
+        "page_content": "Truck-mounted crane operator",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Truck Mounted Crane) NC II.pdf",
+            "page": 4
+        },
+        "type": "Document"
+    }
+}

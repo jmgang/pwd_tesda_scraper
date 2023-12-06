@@ -1,0 +1,11 @@
+{
+    "name": "Agricultural Crops Production NC I",
+    "section1_jobs": {
+        "page_content": "Farm Laborer",
+        "metadata": {
+            "source": "datasets\\raw\\Agricultural Crops Production NC I.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

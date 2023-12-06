@@ -1,0 +1,11 @@
+{
+    "name": "Health Care Services NC II",
+    "section1_jobs": {
+        "page_content": "Nursing Attendant, Nursing Aide, Hospital Assistant, Health Aide",
+        "metadata": {
+            "source": "datasets\\raw\\Health Care Services NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

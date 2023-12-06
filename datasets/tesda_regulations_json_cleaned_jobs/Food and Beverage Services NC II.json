@@ -1,0 +1,11 @@
+{
+    "name": "Food and Beverage Services NC II",
+    "section1_jobs": {
+        "page_content": "Waiter, Food and Beverage Service Attendant",
+        "metadata": {
+            "source": "datasets\\raw\\Food and Beverage Services NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Scaffolding Works (Supported Type Scaffold) NC II",
+    "section1_jobs": {
+        "page_content": "Erect and dismantle supported type scaffold, Handle, segregate and stack scaffolding components, Scaffolder",
+        "metadata": {
+            "source": "datasets\\raw\\Scaffolding Works (Supported Type Scaffold) NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

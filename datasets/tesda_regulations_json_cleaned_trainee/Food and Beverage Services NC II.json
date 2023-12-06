@@ -1,0 +1,11 @@
+{
+    "name": "Food and Beverage Services NC II",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate in basic English both oral and written, at least completed the 10-year basic education, can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Food and Beverage Services NC II.pdf",
+            "page": 70
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Truck Mounted Crane) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Can communicate both orally and in writing\nPhysically and mentally fit\nWith good moral character\nCan perform basic mathematical computation.",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Truck Mounted Crane) NC II.pdf",
+            "page": 69
+        },
+        "type": "Document"
+    }
+}

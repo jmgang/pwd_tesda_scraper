@@ -1,0 +1,11 @@
+{
+    "name": "Gas Tungsten Arc Welding (GTAW) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "completed training in SMAW NC II or a holder of SMAW NC II\ncan communicate both oral and written\nphysically and mentally fit\ncan perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Gas Tungsten Arc Welding (GTAW) NC II.pdf",
+            "page": 56
+        },
+        "type": "Document"
+    }
+}

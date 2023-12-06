@@ -1,0 +1,11 @@
+{
+    "name": "Dressmaking NC II",
+    "section1_jobs": {
+        "page_content": "Draft and cut pattern of casual apparel, Prepare and cut materials of casual apparel, Sew casual apparel, Apply finishing touches on casual apparel, Dressmaker, Garment Sewer",
+        "metadata": {
+            "source": "datasets\\raw\\Dressmaking NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

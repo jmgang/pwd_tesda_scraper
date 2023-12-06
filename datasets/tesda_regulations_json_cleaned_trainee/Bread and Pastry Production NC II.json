@@ -1,0 +1,11 @@
+{
+    "name": "Bread and Pastry Production NC II",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate in basic English either oral and written; at least high school graduate; physically and mentally fit; with good moral character; and can perform basic mathematical computation With pleasing personality",
+        "metadata": {
+            "source": "datasets\\raw\\Bread and Pastry Production NC II.pdf",
+            "page": 54
+        },
+        "type": "Document"
+    }
+}

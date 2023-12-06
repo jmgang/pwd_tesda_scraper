@@ -1,0 +1,11 @@
+{
+    "name": "Grains Production NC II",
+    "section1_jobs": {
+        "page_content": "Rice/Corn Farmer, Rice/Corn Grower, Participate in workplace communication, Work in team environment, Practice career professionalism, Practice occupational health and safety procedures, Apply safety measures in farm operations, Use farm tools and equipment, Perform estimation and basic calculation, Conduct variety and seed selection, Perform land preparation, Carry-out crop establishment, Manage crop, Conduct of harvest and post-harvest operations",
+        "metadata": {
+            "source": "datasets\\raw\\Grains Production NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

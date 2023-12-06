@@ -1,0 +1,29 @@
+{
+    "name": "Shielded Metal Arc Welding (SMAW) NC II",
+    "core_competencies": [
+        {
+            "page_content": "Weldncii11 - 3 01/04/05 44 CORE COMPETENCIES UNIT OF COMPETENCY: Weld Carbon Steel Plates and Pipes Using SMAW UNIT CODE: MEE721306 DESCRIPTOR: This unit covers the skills, knowledge and attitudes required in welding carbon steel plates and pipes using SMAW process. ELEMENTS PERFORMANCE CRITERIA Italicized terms are elaborated in the Range of Variables 1. Perform root pass 1.1 Root pass is performed in accordance with WPS and/or client specifications. 1.2 Task is performed in accordance with company or industry requirement and safety procedure. 1.3 Weld is visually checked for defects and repaired, as required 1.4 Weld is visually acceptable in accordance with applicable codes and standards 2. Clean root pass 2.1 Root pass is cleaned and free from defects and discontinuities 2.2 Task is performed in accordance with approved WPS 3. Weld subsequent/ filling passes 3.1 Subsequent/ filling passes is performed in accordance with approved WPS 3.2 Weld is visually checked for defects and repaired, as required 3.3 Weld is visually acceptable in accordance with applicable codes and standards 4. Perform capping 4.1 Capping is performed in accordance with WPS and/or client specifications 4.2 Weld is visually checked for defects and repaired, as required 4.3 Weld is visually acceptable in accordance with applicable codes and standards",
+            "metadata": {
+                "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC II.pdf",
+                "page": 45
+            },
+            "type": "Document"
+        },
+        {
+            "page_content": "Weldncii11 - 3 01/04/05 45 RANGE OF VARIABLE VARIABLE RANGE 1. WPS WPS Requirements 1.1 Welding positions 1.1 4G (plate) 1.1.2 1G, 2G, 5G and 6G (pipe) 1.2 Material thickness 1.2.1 1.6mm – unlimited (plate) 1.2.2 1.6mm and above (pipe wall thickness) 1.3 Pipe diameter 1.3.1 25.4mm (1in.) - unlimited 1.4 Type of material 1.4.1 Carbon or mild steel 1.5 Type and size of mild steel electrode 1.6 Travel speed 1.7 Current setting (polarity, amperage, voltage) 1.8 Preheating requirement 1.9 Joint preparation 2. Defects 2.1 Porosity 2.2 Undercut 2.3 Arc Strike 2.4 Spatters 2.5 Slag inclusion 2.6 Concavity/convexity 2.7 Degree of reinforcement 2.8 Burn Through 2.9 Crater cracks 2.10 Cracks 2.11 Lack of Fusion 2.12 Pinholes/Blowholes 2.13 Under Fill 2.14 Overlap 2.15 Misalignment 2.16 Distortion",
+            "metadata": {
+                "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC II.pdf",
+                "page": 46
+            },
+            "type": "Document"
+        },
+        {
+            "page_content": "Weldncii11 - 3 01/04/05 46 EVIDENCE GUIDE 1. Critical Aspects of Competency Assessment requires evidence that the candidate welded carbon steel pipes in 2G and 5G and/or 6G positions to acceptable standard following the approved WPS 2. Underpinning Knowledge 2.1 Drawing/Plan/WPS interpretation 2.2 Materials and consumables (Electrodes, Base Metal) 2.3 Welding Equipment and Tools 2.4 Basic Mathematics (Multiplication, Division, Addition and Subtraction) 2.5 Welding Codes 2.6 Identification of weld defects 2 Underpinning Skills 3.1 Measuring skills 3.2 Communication skills 3.3 Rectifying weld defects 3.4 Applying weld techniques 3.5 Handling welding tools and equipment 3.6 Handling welding materials and consumables 3 Resource Implications The following resources must be provided: 4.1 Welding facilities and equipment 4.2 Supplies and materials 4.3 PPE 4.4 Relevant documentation such as WPS and working drawing 4 Method of Assessment Competency must be assessed through: 5.1 Observation and interview 5.2 Demonstration and interview 5.3 Written test 5.4 Portfolio 5 Context of Assessment Competency to be assessed while a task is being undertaken in the workplace or in a simulated workplace setting.",
+            "metadata": {
+                "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC II.pdf",
+                "page": 47
+            },
+            "type": "Document"
+        }
+    ]
+}

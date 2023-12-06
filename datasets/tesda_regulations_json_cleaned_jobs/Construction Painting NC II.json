@@ -1,0 +1,11 @@
+{
+    "name": "Construction Painting NC II",
+    "section1_jobs": {
+        "page_content": "Construction Painter",
+        "metadata": {
+            "source": "datasets\\raw\\Construction Painting NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

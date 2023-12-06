@@ -1,0 +1,11 @@
+{
+    "name": "Automotive Servicing NC I",
+    "section1_jobs": {
+        "page_content": "Pre-delivery inspector, Check lister, Periodic maintenance personnel/staff, Periodic maintenance associate, Junior technician, Maintenance technician, Auto-service personnel",
+        "metadata": {
+            "source": "datasets\\raw\\Automotive Servicing NC I.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

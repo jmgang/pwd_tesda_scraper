@@ -1,0 +1,11 @@
+{
+    "name": "Artificial Insemination (Swine) NC II",
+    "section1_jobs": {
+        "page_content": "Swine Artificial Insemination Technician, Swine Breeding Technician",
+        "metadata": {
+            "source": "datasets\\raw\\Artificial Insemination (Swine) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

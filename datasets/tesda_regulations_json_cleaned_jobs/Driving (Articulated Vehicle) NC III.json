@@ -1,0 +1,11 @@
+{
+    "name": "Driving (Articulated Vehicle) NC III",
+    "section1_jobs": {
+        "page_content": "Articulated Vehicle Driver, Truck Trailer Driver",
+        "metadata": {
+            "source": "datasets\\raw\\Driving (Articulated Vehicle) NC III.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

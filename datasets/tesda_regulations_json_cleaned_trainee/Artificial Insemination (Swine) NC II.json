@@ -1,0 +1,11 @@
+{
+    "name": "Artificial Insemination (Swine) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Able to read and write; With good moral character; Ability to communicate, both oral and written; and Physically fit and mentally healthy as certified by a Public Health Officer",
+        "metadata": {
+            "source": "datasets\\raw\\Artificial Insemination (Swine) NC II.pdf",
+            "page": 48
+        },
+        "type": "Document"
+    }
+}

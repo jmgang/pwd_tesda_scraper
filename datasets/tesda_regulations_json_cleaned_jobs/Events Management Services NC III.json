@@ -1,0 +1,11 @@
+{
+    "name": "Events Management Services NC III",
+    "section1_jobs": {
+        "page_content": "Events Coordinator, Conference Coordinator, Function Coordinator",
+        "metadata": {
+            "source": "datasets\\raw\\Events Management Services NC III.pdf",
+            "page": 4
+        },
+        "type": "Document"
+    }
+}

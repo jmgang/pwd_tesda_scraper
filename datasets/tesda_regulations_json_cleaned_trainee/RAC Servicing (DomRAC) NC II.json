@@ -1,0 +1,11 @@
+{
+    "name": "RAC Servicing (DomRAC) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Can communicate both oral and written\nGood moral character\nCan perform basic mathematical computation\nPhysically and mentally fit",
+        "metadata": {
+            "source": "datasets\\raw\\RAC Servicing (DomRAC) NC II.pdf",
+            "page": 72
+        },
+        "type": "Document"
+    }
+}

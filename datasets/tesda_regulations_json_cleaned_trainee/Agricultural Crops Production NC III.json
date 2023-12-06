@@ -1,0 +1,11 @@
+{
+    "name": "Agricultural Crops Production NC III",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate either oral and written\nphysically and mentally fit\nwith good moral character\ncan perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Agricultural Crops Production NC III.pdf",
+            "page": 137
+        },
+        "type": "Document"
+    }
+}

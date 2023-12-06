@@ -1,0 +1,11 @@
+{
+    "name": "Beauty Care NC II",
+    "section1_jobs": {
+        "page_content": "Junior Beautician",
+        "metadata": {
+            "source": "datasets\\raw\\Beauty Care NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

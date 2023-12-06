@@ -1,0 +1,11 @@
+{
+    "name": "Automotive Servicing NC II",
+    "section1_jobs": {
+        "page_content": "Automotive Mechanic, Automotive Service Technician",
+        "metadata": {
+            "source": "datasets\\raw\\Automotive Servicing NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

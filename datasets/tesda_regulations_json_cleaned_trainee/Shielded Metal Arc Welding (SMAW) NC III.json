@@ -1,0 +1,11 @@
+{
+    "name": "Shielded Metal Arc Welding (SMAW) NC III",
+    "trainee_entry_requirements": {
+        "page_content": "Must have completed training in SMAW NC II or a holder of SMAW NC II\nCan communicate either orally and written\nPhysically and mentally fit\nWith good moral character\nCan perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC III.pdf",
+            "page": 58
+        },
+        "type": "Document"
+    }
+}

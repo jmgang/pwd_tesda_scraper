@@ -1,0 +1,11 @@
+{
+    "name": "PV Systems Installation NC II",
+    "section1_jobs": {
+        "page_content": "PV Systems Installation Technician, PV Systems Commissioning Technician",
+        "metadata": {
+            "source": "datasets\\raw\\PV Systems Installation NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

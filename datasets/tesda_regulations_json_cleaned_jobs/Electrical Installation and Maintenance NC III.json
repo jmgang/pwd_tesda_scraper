@@ -1,0 +1,11 @@
+{
+    "name": "Electrical Installation and Maintenance NC III",
+    "section1_jobs": {
+        "page_content": "Industrial Electrician, Electrical Leadman, Electrical Foreman",
+        "metadata": {
+            "source": "datasets\\raw\\Electrical Installation and Maintenance NC III.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

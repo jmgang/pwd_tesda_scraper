@@ -1,0 +1,11 @@
+{
+    "name": "Animal Production (Swine) NC II",
+    "section1_jobs": {
+        "page_content": "Swine Raiser/Farmer, Swine Production Technician, Swine Farm Specialist",
+        "metadata": {
+            "source": "datasets\\raw\\Animal Production (Swine) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

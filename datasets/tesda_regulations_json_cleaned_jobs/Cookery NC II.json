@@ -1,0 +1,11 @@
+{
+    "name": "Cookery NC II",
+    "section1_jobs": {
+        "page_content": "Cook, Commis, Assistant Cook, Clean and maintain kitchen premises, Prepare stocks, sauces and soups, Prepare appetizers, Prepare salads and dressing, Prepare sandwiches, Prepare meat dishes, Prepare vegetables dishes, Prepare egg dishes, Prepare starch dishes, Prepare poultry and game dishes, Prepare seafood dishes, Prepare desserts, Package prepared food",
+        "metadata": {
+            "source": "datasets\\raw\\Cookery NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

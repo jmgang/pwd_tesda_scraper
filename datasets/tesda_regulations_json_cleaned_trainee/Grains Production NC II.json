@@ -1,0 +1,11 @@
+{
+    "name": "Grains Production NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Able to read and write\nAble to communicate, both orally and in writing\nBasic mathematical skills\nPhysically able",
+        "metadata": {
+            "source": "datasets\\raw\\Grains Production NC II.pdf",
+            "page": 102
+        },
+        "type": "Document"
+    }
+}

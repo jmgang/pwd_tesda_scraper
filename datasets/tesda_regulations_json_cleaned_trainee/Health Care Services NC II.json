@@ -1,0 +1,11 @@
+{
+    "name": "Health Care Services NC II",
+    "trainee_entry_requirements": {
+        "page_content": "16 years old and above\nMust pass the trainability / aptitude test\nCan communicate effectively both orally and in written form\nPhysically, emotionally and mentally fit\nCan perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Health Care Services NC II.pdf",
+            "page": 59
+        },
+        "type": "Document"
+    }
+}

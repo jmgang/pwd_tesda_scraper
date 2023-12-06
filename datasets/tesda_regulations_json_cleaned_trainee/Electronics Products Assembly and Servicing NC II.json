@@ -1,0 +1,11 @@
+{
+    "name": "Electronics Products Assembly and Servicing NC II",
+    "trainee_entry_requirements": {
+        "page_content": "The trainees who wish to enter the course should possess the following requirements: Must have completed at least 10 years basic education or an ALS grade 10 certificate of rating holder. Can communicate in oral and written language. Can perform basic mathematical computations.",
+        "metadata": {
+            "source": "datasets\\raw\\Electronics Products Assembly and Servicing NC II.pdf",
+            "page": 62
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Hilot (Wellness Massage) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "18 years old and above\nMust pass the personality / aptitude test\nCan communicate effectively both oral and written form\nPhysically, emotionally and mentally fit\nGood moral character",
+        "metadata": {
+            "source": "datasets\\raw\\Hilot (Wellness Massage) NC II.pdf",
+            "page": 63
+        },
+        "type": "Document"
+    }
+}

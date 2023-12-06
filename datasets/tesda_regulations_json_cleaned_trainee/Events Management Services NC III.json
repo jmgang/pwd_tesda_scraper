@@ -1,0 +1,11 @@
+{
+    "name": "Events Management Services NC III",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate in basic English in both oral and written form\nphysically and mentally fit\nwith good moral character\ncan perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Events Management Services NC III.pdf",
+            "page": 90
+        },
+        "type": "Document"
+    }
+}

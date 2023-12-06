@@ -1,0 +1,11 @@
+{
+    "name": "Plumbing NC II",
+    "trainee_entry_requirements": {
+        "page_content": "At least Senior High School (Grade 11 & 12) level or graduate; Holder of Plumbing NC I or relevant industry experience (plumbing works) for a minimum of 2 years certified by the employer or a Registered Master Plumber; Able to communicate orally and in writing; Can perform basic mathematical computations.",
+        "metadata": {
+            "source": "datasets\\raw\\Plumbing NC II.pdf",
+            "page": 77
+        },
+        "type": "Document"
+    }
+}

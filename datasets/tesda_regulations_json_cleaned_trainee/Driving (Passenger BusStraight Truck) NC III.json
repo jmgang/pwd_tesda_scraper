@@ -1,0 +1,11 @@
+{
+    "name": "Driving (Passenger BusStraight Truck) NC III",
+    "trainee_entry_requirements": {
+        "page_content": "With good moral character; Able to communicate both orally and in writing. Physically fit and mentally healthy as certified by a Public Health Officer. Holder of LTO license with restriction code 2.",
+        "metadata": {
+            "source": "datasets\\raw\\Driving (Passenger BusStraight Truck) NC III.pdf",
+            "page": 72
+        },
+        "type": "Document"
+    }
+}

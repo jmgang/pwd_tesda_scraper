@@ -1,0 +1,11 @@
+{
+    "name": "HEO (Forklift) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "At least Junior High School Level Completer or an Alternative Learning System (ALS) Certificate of Completion with grade 10 equivalent holder. Must possess good communication skills. Can perform basic mathematical computation. Physically fit.",
+        "metadata": {
+            "source": "datasets\\raw\\HEO (Forklift) NC II.pdf",
+            "page": 98
+        },
+        "type": "Document"
+    }
+}

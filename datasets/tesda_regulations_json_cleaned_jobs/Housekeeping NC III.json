@@ -1,0 +1,11 @@
+{
+    "name": "Housekeeping NC III",
+    "section1_jobs": {
+        "page_content": "Housekeeping Supervisor, Floor Supervisor",
+        "metadata": {
+            "source": "datasets\\raw\\Housekeeping NC III.pdf",
+            "page": 4
+        },
+        "type": "Document"
+    }
+}

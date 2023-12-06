@@ -1,0 +1,11 @@
+{
+    "name": "Tailoring NC II",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate both oral and written, physically and mentally fit, with good moral character, can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Tailoring NC II.pdf",
+            "page": 50
+        },
+        "type": "Document"
+    }
+}

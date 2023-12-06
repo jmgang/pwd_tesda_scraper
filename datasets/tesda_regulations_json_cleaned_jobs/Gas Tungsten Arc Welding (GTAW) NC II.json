@@ -1,0 +1,11 @@
+{
+    "name": "Gas Tungsten Arc Welding (GTAW) NC II",
+    "section1_jobs": {
+        "page_content": "GTAW/TIG Welder",
+        "metadata": {
+            "source": "datasets\\raw\\Gas Tungsten Arc Welding (GTAW) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

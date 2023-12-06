@@ -1,0 +1,11 @@
+{
+    "name": "Rice Machinery Operations NC II",
+    "section1_jobs": {
+        "page_content": "Rice Land Preparation Machinery Operator (Hand Tractor, 4-Wheel Tractor), Rice Crop Establishment Machinery Operator (Manual Seeder, Motorized Seeder, Rice Transplanter), Rice Crop Care Machinery Operator (Irrigation Pump, Cultivator, Sprayer, Fertilizer Applicator), Rice Harvesting and Threshing Machinery Operator (Reaper, Stripper, Combine, Thresher), Rice Drying Machinery Operator (Batch, Continuous Flow Dryer), Rice Mill Machinery Operator (Single-Pass, Multi-Pass), Rice Machinery Operator",
+        "metadata": {
+            "source": "datasets\\raw\\Rice Machinery Operations NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Flux Cored Arc Welding (FCAW) NC II",
+    "trainee_entry_requirements": {
+        "page_content": "completed training in FCAW NC I or a holder of FCAW NC I, can communicate either oral and written, physically and mentally fit, can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Flux Cored Arc Welding (FCAW) NC II.pdf",
+            "page": 53
+        },
+        "type": "Document"
+    }
+}

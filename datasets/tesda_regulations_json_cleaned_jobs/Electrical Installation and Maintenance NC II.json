@@ -1,0 +1,11 @@
+{
+    "name": "Electrical Installation and Maintenance NC II",
+    "section1_jobs": {
+        "page_content": "Building-Wiring Electrician, Residential/Commercial-Wiring Electrician, Maintenance Electrician",
+        "metadata": {
+            "source": "datasets\\raw\\Electrical Installation and Maintenance NC II.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

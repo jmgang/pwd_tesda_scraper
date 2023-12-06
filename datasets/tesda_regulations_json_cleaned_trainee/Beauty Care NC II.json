@@ -1,0 +1,11 @@
+{
+    "name": "Beauty Care NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Trainees or students wishing to gain entry into these qualifications should possess the following requirements: MUST be able to communicate effectively both orally and in written form MUST be physically, emotionally, psychologically and mentally fit MUST be able to perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Beauty Care NC II.pdf",
+            "page": 63
+        },
+        "type": "Document"
+    }
+}

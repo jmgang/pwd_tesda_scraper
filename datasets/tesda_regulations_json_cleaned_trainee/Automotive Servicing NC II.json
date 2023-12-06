@@ -1,0 +1,11 @@
+{
+    "name": "Automotive Servicing NC II",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate both oral and written; can perform basic mathematical computation. This list does not include specific institutional requirements such as educational attainment, appropriate work experience, and others that may be required of the trainees by the school or training center delivering the TVET program.",
+        "metadata": {
+            "source": "datasets\\raw\\Automotive Servicing NC II.pdf",
+            "page": 102
+        },
+        "type": "Document"
+    }
+}

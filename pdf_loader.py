@@ -35,7 +35,7 @@ def tesda_regulation_to_dict(tesda_doc: TesdaRegulationPDF) -> dict:
     }
 
 
-def save_as_json(filename: str, documents: List[dict], path_prefix: str = ''):
+def save_as_json(filename: str, documents: Any, path_prefix: str = ''):
     base_filename = os.path.splitext(filename)[0]
     with open(f'{os.path.join(path_prefix, base_filename)}.json', 'w', encoding='utf-8') as file:
         json.dump(documents, file, ensure_ascii=False, indent=4)
@@ -425,6 +425,98 @@ def extract_documents(documents: List[Document], pages: List[int], toc_page:int)
     return '\n'.join(extracted_documents_list)
 
 
+def clean_disjoined_words(text: str) -> Any:
+    template = """Given the following unstructured text below, make the text presentable such as correcting disjoined words
+    (such as "me al" instead of "meal" or "t o" instead of "to"), separating numbers from words 
+    (such as "6.1Assessment" into "6.1 Assessment"), remove newlines, etc. and give me the same exact text 
+    with the errors corrected. Do not add or remove any details. Just return back the original 
+    text with the corrected words:
+
+    {text}
+
+    YOUR RESPONSE:
+    """
+
+    llm = ChatOpenAI(
+        temperature=0,
+        openai_api_key=os.environ['OPENAI_API_KEY'],
+        model='gpt-3.5-turbo-1106'
+    )
+
+    prompt = PromptTemplate(
+        input_variables=['text'], template=template
+    )
+
+    chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
+
+    return chain.run({'text': text})
+
+def extract_and_clean_text(to_extract: str, addl_details:str, text: str) -> Any:
+    template = """Given the following unstructured text below after the hyphens, comprehend the text, 
+    extract the '{to_extract}' part or section of the text, and remove any unnecessary sections that are not part of 
+    '{to_extract}'. {addl_details}.
+    Afterwards, clean the extracted subsection with data cleaning techniques such as correcting disjoined words
+    (such as "me al" instead of "meal" or "t o" instead of "to"), separating numbers from words 
+    (such as "6.1Assessment" into "6.1 Assessment"), removing newlines, removing special characters, etc.; Return only 
+    the cleaned and extracted section as your response, do not add more details and do not add the '{to_extract}' title or
+    header since we already know what it is.
+    
+    -------------------
+    {text}
+
+    YOUR RESPONSE:
+    """
+
+    llm = ChatOpenAI(
+        temperature=0,
+        openai_api_key=os.environ['OPENAI_API_KEY'],
+        model='gpt-3.5-turbo-1106'
+    )
+
+    prompt = PromptTemplate(
+        input_variables=['to_extract', 'addl_details', 'text'], template=template
+    )
+
+    chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
+
+    return chain.run({'to_extract': to_extract, 'addl_details': addl_details, 'text': text})
+
+def clean_documents(documents: List[Document], pages: List[int], toc_page:int) -> List[dict]:
+    extracted_documents_list = []
+    starting_page_number = pages[0] + toc_page
+    ending_page_number = pages[1] + toc_page if len(pages) == 2 else starting_page_number
+    while starting_page_number <= ending_page_number:
+        page_content = documents[starting_page_number].page_content
+        page_content_without_disjoined = clean_disjoined_words(page_content.replace('\n', '')
+                                                               .replace('_', ''))
+        doc = Document(**{
+            'page_content': page_content_without_disjoined,
+            'metadata':documents[starting_page_number].metadata,
+            'type': documents[starting_page_number].type
+        })
+        extracted_documents_list.append(document_to_dict(doc))
+        starting_page_number += 1
+    return extracted_documents_list
+
+def extract_and_clean(documents: List[Document], pages: List[int], toc_page:int, to_extract:str, addl_details:str) -> Document:
+    extracted_documents_list = []
+    starting_page_number = pages[0] + toc_page
+    ending_page_number = pages[1] + toc_page if len(pages) == 2 else starting_page_number
+    combined_page_content_list = []
+    while starting_page_number <= ending_page_number:
+        page_content = documents[starting_page_number].page_content
+        combined_page_content_list.append(page_content.replace('\n', '')
+                                                               .replace('_', ''))
+        starting_page_number += 1
+
+    extract_and_cleaned_text = extract_and_clean_text(to_extract, addl_details, '\n'.join(combined_page_content_list))
+
+    return Document(**{
+        'page_content': extract_and_cleaned_text,
+        'metadata': documents[starting_page_number].metadata,
+        'type': documents[starting_page_number].type
+    })
+
 if __name__ == "__main__":
     # Loading the PDFs using PDFLoader then saving as a JSON file.
     # Do not uncomment if datasets/json directory is already populated
@@ -512,32 +604,152 @@ if __name__ == "__main__":
 
     # Building the dataset using pandas
     # Loading the JSON files
-    source_filepath = 'datasets/tesda_regulations_json_section1_updated'
-    tesda_regulation_pdf_list = []
-    for filename in os.listdir(source_filepath):
-        tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
+    # source_filepath = 'datasets/tesda_regulations_json_section1_updated'
+    # tesda_regulation_pdf_list = []
+    # for filename in os.listdir(source_filepath):
+    #     tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
+    #
+    # tesda_dataset_list = list()
+    # for tesda_regulation_pdf in tesda_regulation_pdf_list:
+    #     tesda_dataset_list.append({
+    #         'name': tesda_regulation_pdf.name,
+    #         'core_competencies': extract_documents(tesda_regulation_pdf.documents,
+    #                                                tesda_regulation_pdf.core_pages,
+    #                                                tesda_regulation_pdf.toc_page),
+    #         'trainee_entry_requirements': extract_documents(tesda_regulation_pdf.documents,
+    #                                                         tesda_regulation_pdf.trainee_entry_requirements_pages,
+    #                                                         tesda_regulation_pdf.toc_page),
+    #         'section_1': extract_documents(tesda_regulation_pdf.documents,
+    #                                        tesda_regulation_pdf.section1_pages,
+    #                                        tesda_regulation_pdf.toc_page)
+    #     })
+    #
+    # print(tesda_dataset_list[:5])
+    #
+    # tesda_df = pd.DataFrame(tesda_dataset_list)
+    # print(tesda_df.head())
+    #
+    # print(tesda_df.loc[0, 'trainee_entry_requirements'])
+    #
+    # tesda_df.to_csv('datasets/tesda_modules_dataset_v2.csv', index=False)
 
-    tesda_dataset_list = list()
-    for tesda_regulation_pdf in tesda_regulation_pdf_list:
-        tesda_dataset_list.append({
-            'name': tesda_regulation_pdf.name,
-            'core_competencies': extract_documents(tesda_regulation_pdf.documents,
-                                                   tesda_regulation_pdf.core_pages,
-                                                   tesda_regulation_pdf.toc_page),
-            'trainee_entry_requirements': extract_documents(tesda_regulation_pdf.documents,
-                                                            tesda_regulation_pdf.trainee_entry_requirements_pages,
-                                                            tesda_regulation_pdf.toc_page),
-            'section_1': extract_documents(tesda_regulation_pdf.documents,
-                                           tesda_regulation_pdf.section1_pages,
-                                           tesda_regulation_pdf.toc_page)
-        })
+    # Cleaning
+    # source_filepath = 'datasets/tesda_regulations_json_section1_updated'
+    # tesda_regulation_pdf_list = []
+    # for filename in os.listdir(source_filepath):
+    #     tesda_regulation_pdf_list.append(load_tesda_regulation_pdf_from_json(os.path.join(source_filepath, filename)))
+    #
+    # tesda_dataset_list = list()
+    # for tesda_regulation_pdf in tesda_regulation_pdf_list[60:]:
+    #     tesda_dict = {
+    #         'name': tesda_regulation_pdf.name,
+    #         'core_competencies': clean_documents(tesda_regulation_pdf.documents,
+    #                                                          tesda_regulation_pdf.core_pages,
+    #                                                          tesda_regulation_pdf.toc_page)
+    #     }
+    #
+    #     save_as_json(f'datasets/tesda_regulations_json_cleaned_disjoined/{tesda_regulation_pdf.name}', tesda_dict)
 
-    print(tesda_dataset_list[:5])
+    # Extract Trainee entry requirements
+    # for tesda_regulation_pdf in tesda_regulation_pdf_list[15:]:
+    #     tesda_dict = {
+    #         'name': tesda_regulation_pdf.name,
+    #         'trainee_entry_requirements': document_to_dict(extract_and_clean(tesda_regulation_pdf.documents,
+    #                                              tesda_regulation_pdf.trainee_entry_requirements_pages,
+    #                                              tesda_regulation_pdf.toc_page,
+    #                                              'Trainee Entry Requirements'))
+    #     }
+    #     print(tesda_dict)
+    # #
+    #     save_as_json(f'datasets/tesda_regulations_json_cleaned_trainee/{tesda_regulation_pdf.name}', tesda_dict)
 
-    tesda_df = pd.DataFrame(tesda_dataset_list)
-    print(tesda_df.head())
+    # Extract section 1 jobs
+    # for tesda_regulation_pdf in tesda_regulation_pdf_list[35:]:
+    #     tesda_dict = {
+    #         'name': tesda_regulation_pdf.name,
+    #         'section1_jobs': document_to_dict(extract_and_clean(tesda_regulation_pdf.documents,
+    #                                              tesda_regulation_pdf.section1_pages,
+    #                                              tesda_regulation_pdf.toc_page,
+    #                                              'Potential jobs that a qualified person is competent to be',
+    #                                             'These are usually found at the end of the text. Separate them by'
+    #                                             'comma, and don\'t add any more details than what is specified in the text.'))
+    #     }
+    #     print(tesda_dict['section1_jobs'])
+    # #
+    #     save_as_json(f'datasets/tesda_regulations_json_cleaned_jobs/{tesda_regulation_pdf.name}', tesda_dict)
 
-    print(tesda_df.loc[0, 'trainee_entry_requirements'])
+    # Loading the cleaned core competencies
+    # source_filepath = 'datasets/tesda_regulations_json_cleaned_disjoined/'
+    # tesda_dict_list = []
+    # for filename in os.listdir(source_filepath):
+    #     with open(os.path.join(source_filepath, filename), 'r', encoding='utf-8') as file:
+    #         data = json.load(file)
+    #         if isinstance(data, list):
+    #             target_tesda_module = data[-1]
+    #         elif isinstance(data, dict):
+    #             target_tesda_module = data
+    #         else:
+    #             print(f'Invalid: {filename}')
+    #         core_competencies_docs = [Document(**doc) for doc in target_tesda_module['core_competencies']]
+    #         tesda_dict_list.append({
+    #             'name': target_tesda_module['name'],
+    #             'core_competencies': '\n'.join([doc.page_content for doc in core_competencies_docs])
+    #         })
+    #
+    # tesda_cc_no_disjoined_df = pd.DataFrame(tesda_dict_list)
+    # tesda_cc_no_disjoined_df.to_csv('datasets/csv/tesda_core_competencies_no_disjoined.csv', index=False)
+    #
+    # print(tesda_cc_no_disjoined_df.info())
+    # print(tesda_cc_no_disjoined_df.name.unique())
+    # print(tesda_cc_no_disjoined_df.name.nunique())
 
-    tesda_df.to_csv('datasets/tesda_modules_dataset_v1.csv', index=False)
+    # Loading the trainee entry requirements extracted and cleaned
+    # source_filepath = 'datasets/tesda_regulations_json_cleaned_trainee/'
+    # tesda_dict_list = []
+    # for filename in os.listdir(source_filepath):
+    #     with open(os.path.join(source_filepath, filename), 'r', encoding='utf-8') as file:
+    #         data = json.load(file)
+    #         tesda_dict_list.append({
+    #             'name': data['name'],
+    #             'trainee_entry_requirements': data['trainee_entry_requirements']['page_content']
+    #         })
+    #
+    # tesda_ter_no_disjoined_df = pd.DataFrame(tesda_dict_list)
+    # tesda_ter_no_disjoined_df.to_csv('datasets/csv/tesda_ter_no_disjoined.csv', index=False)
+    #
+    # print(tesda_ter_no_disjoined_df.info())
+    # print(tesda_ter_no_disjoined_df.name.unique())
+    # print(tesda_ter_no_disjoined_df.name.nunique())
 
+    # Loading the section 1 jobs extracted and cleaned
+    # source_filepath = 'datasets/tesda_regulations_json_cleaned_jobs/'
+    # tesda_dict_list = []
+    # for filename in os.listdir(source_filepath):
+    #     with open(os.path.join(source_filepath, filename), 'r', encoding='utf-8') as file:
+    #         data = json.load(file)
+    #         tesda_dict_list.append({
+    #             'name': data['name'],
+    #             'section1_jobs': data['section1_jobs']['page_content']
+    #         })
+    #
+    # tesda_jobs_no_disjoined_df = pd.DataFrame(tesda_dict_list)
+    # tesda_jobs_no_disjoined_df.to_csv('datasets/csv/tesda_jobs_no_disjoined.csv', index=False)
+    #
+    # print(tesda_jobs_no_disjoined_df.info())
+    # print(tesda_jobs_no_disjoined_df.name.unique())
+    # print(tesda_jobs_no_disjoined_df.name.nunique())
+
+    # tesda_cc_no_disjoined_df = pd.read_csv('datasets/csv/tesda_core_competencies_no_disjoined.csv')
+    # tesda_ter_no_disjoined_df = pd.read_csv('datasets/csv/tesda_ter_no_disjoined.csv')
+    # tesda_jobs_no_disjoined_df = pd.read_csv('datasets/csv/tesda_jobs_no_disjoined.csv')
+    #
+    # merged_tesda_df = (tesda_cc_no_disjoined_df.merge(tesda_ter_no_disjoined_df, on='name')
+    #                    .merge(tesda_jobs_no_disjoined_df, on='name'))
+    #
+    # print(merged_tesda_df.info())
+    # print(merged_tesda_df.name.unique())
+    # print(merged_tesda_df.name.nunique())
+    #
+    # merged_tesda_df.to_csv('datasets/csv/tesda_modules_dataset_v3.csv', index=False)
+
+    pass

@@ -1,0 +1,11 @@
+{
+    "name": "Organic Agriculture Production NC II",
+    "section1_jobs": {
+        "page_content": "Organic Agriculture Farmer, Organic Chicken Raiser, Organic Hogs Raiser, Organic Small Ruminants Raiser, Organic Vegetables Farmer, Organic Concoctions and Extracts Producer, Organic Fertilizer Producer",
+        "metadata": {
+            "source": "datasets\\raw\\Organic Agriculture Production NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Barista NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Must have completed a 10-year basic education. Good in oral and written communication.",
+        "metadata": {
+            "source": "datasets\\raw\\Barista NC II.pdf",
+            "page": 49
+        },
+        "type": "Document"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Housekeeping NC II",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate in English both oral and written; can perform basic mathematical computation. This list does not include specific institutional requirements such as educational attainment, appropriate work experience and others that may be required of the trainees by the school or training center delivering the TVET program.",
+        "metadata": {
+            "source": "datasets\\raw\\Housekeeping NC II.pdf",
+            "page": 61
+        },
+        "type": "Document"
+    }
+}

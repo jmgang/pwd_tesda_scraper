@@ -1,0 +1,11 @@
+{
+    "name": "Agricultural Crops Production NC III",
+    "section1_jobs": {
+        "page_content": "Independent Farmer (Owner / Operator in a smaller operation, Leading hand",
+        "metadata": {
+            "source": "datasets\\raw\\Agricultural Crops Production NC III.pdf",
+            "page": 5
+        },
+        "type": "Document"
+    }
+}

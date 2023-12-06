@@ -1,0 +1,11 @@
+{
+    "name": "Bartending NC II",
+    "trainee_entry_requirements": {
+        "page_content": "Trainees or students who wish to enter training leading to these qualifications should possess the following requirements: can communicate in basic English either oral and written, at least 10-year basic education graduate, can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Bartending NC II.pdf",
+            "page": 67
+        },
+        "type": "Document"
+    }
+}

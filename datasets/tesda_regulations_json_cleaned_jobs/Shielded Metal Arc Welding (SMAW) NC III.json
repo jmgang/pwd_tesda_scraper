@@ -1,0 +1,11 @@
+{
+    "name": "Shielded Metal Arc Welding (SMAW) NC III",
+    "section1_jobs": {
+        "page_content": "Plate Welder (SMAW), Pipe Welder (SMAW), Plate Welder (SMAW - Alloy Steel)",
+        "metadata": {
+            "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC III.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

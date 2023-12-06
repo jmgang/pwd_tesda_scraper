@@ -1,0 +1,11 @@
+{
+    "name": "Bartending NC II",
+    "section1_jobs": {
+        "page_content": "Bartender/Barkeeper, Bar Utility/Back",
+        "metadata": {
+            "source": "datasets\\raw\\Bartending NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

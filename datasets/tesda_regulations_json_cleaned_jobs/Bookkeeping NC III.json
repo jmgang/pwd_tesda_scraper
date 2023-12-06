@@ -1,0 +1,11 @@
+{
+    "name": "Bookkeeping NC III",
+    "section1_jobs": {
+        "page_content": "Bookkeeper, Accounting Clerk",
+        "metadata": {
+            "source": "datasets\\raw\\Bookkeeping NC III.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

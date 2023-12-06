@@ -1,0 +1,11 @@
+{
+    "name": "Animal Production (Ruminants) NC II",
+    "section1_jobs": {
+        "page_content": "Livestock Raiser/Farmer, Cattle Farm Worker (Specialist), Goat raiser/farmer, Dairy Raiser/Farmer",
+        "metadata": {
+            "source": "datasets\\raw\\Animal Production (Ruminants) NC II.pdf",
+            "page": 3
+        },
+        "type": "Document"
+    }
+}

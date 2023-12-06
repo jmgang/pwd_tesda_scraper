@@ -1,0 +1,11 @@
+{
+    "name": "Shielded Metal Arc Welding (SMAW) NC I",
+    "trainee_entry_requirements": {
+        "page_content": "can communicate either oral and written, physically and mentally fit, with good moral character, can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Shielded Metal Arc Welding (SMAW) NC I.pdf",
+            "page": 53
+        },
+        "type": "Document"
+    }
+}

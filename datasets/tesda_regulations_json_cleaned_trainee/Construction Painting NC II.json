@@ -1,0 +1,11 @@
+{
+    "name": "Construction Painting NC II",
+    "trainee_entry_requirements": {
+        "page_content": "At least senior high school level or graduate; relevant industry experience (construction painting works) minimum of 2 years in all of the following: Able to communicate orally and in writing; and Can perform basic mathematical computation",
+        "metadata": {
+            "source": "datasets\\raw\\Construction Painting NC II.pdf",
+            "page": 88
+        },
+        "type": "Document"
+    }
+}
